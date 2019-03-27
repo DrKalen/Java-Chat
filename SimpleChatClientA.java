@@ -37,6 +37,7 @@ public class SimpleChatClientA {
     public void actionPerformed(ActionEvent ev) {
 	try {
 	  writer.println(outgoing.getText());
+	  System.out.println(outgoing.getText());
 	  writer.flush();
 	} catch(Exception ex) {
 	  ex.printStackTrace();
